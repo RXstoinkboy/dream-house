@@ -1,0 +1,5 @@
+.grid{
+    background: red;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+}
