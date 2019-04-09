@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
+import styles from './styles/Favourites.module.css'
 
 const Favourites = () => {
     return (
-        <div>
+        <div className={styles.wrapper}>
             favs
         </div>
     );

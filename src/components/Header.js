@@ -12,8 +12,10 @@ const Header = () => {
         <div className={styles.grid}>
             <Logo />
             <Contacts />
-            <SearchBar />
-            <Favourites />
+            <div className={styles.infoBar}>
+                <SearchBar />
+                <Favourites />
+            </div>
         </div>
     );
 };
