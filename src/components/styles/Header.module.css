@@ -1,10 +1,12 @@
 .grid{
-    background: red;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
 }
 
 .infoBar{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
 }

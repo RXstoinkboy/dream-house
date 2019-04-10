@@ -6,7 +6,7 @@ import logo from '../assets/img/logo.jpg'
 const Logo = () => {
     return (
         <div className={styles.wrapper}>
-          <Link to='/lala'>
+          <Link to='/'>
             <img src={logo} alt="dream house"/>  
           </Link>
         </div>

@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './styles/SearchBar.module.css'
+import {ReactComponent as SearchIcon} from '../assets/img/search.svg'
 
 const SearchBar = () => {
     return (
-        <div className={styles.wrapper}>
-            search
-        </div>
+        <form className={styles.wrapper}>
+            <label htmlFor='searchBar' className={styles.searchElement}>
+                <input id='searchBar' type='search' className={styles.searchBar}/>
+                <SearchIcon className={styles.searchIcon}/>
+            </label>
+        </form>
     );
 };
 

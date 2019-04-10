@@ -10,7 +10,7 @@ test('<Logo /> renders correctly', ()=>{
 // zły test - trzeba przepisac
 test('Clicking on <Logo /> redirects to "/"',()=>{
     const logo = mount(
-        <MemoryRouter initialEntries={['/test']}>
+        <MemoryRouter initialEntries={['/test']} >
             <Logo />
         </MemoryRouter>
     )

@@ -1,1 +1,3 @@
 export const EXAMPLE = 'EXAMPLE'
+
+export const TOGGLE_CONTACT_MODAL = 'TOGGLE_CONTACT_MODAL'
