@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from './styles/Favourites.module.scss'
+import {ReactComponent as FavIcon} from '../assets/img/heart.svg'
 
 const Favourites = () => {
     return (
         <div className={styles.wrapper}>
-            favs
+            <button className={styles.favouritesListBtn}>
+                <p>favourites</p>
+                <FavIcon className={styles.favIcon} />
+            </button>
         </div>
     );
 };

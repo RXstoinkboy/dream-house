@@ -6,6 +6,7 @@ import Logo from './Logo'
 import Contacts from './Contacts'
 import SearchBar from './SearchBar'
 import Favourites from './Favourites'
+import HeaderTitle from './HeaderTitle'
 
 const Header = () => {
     return (
@@ -13,6 +14,7 @@ const Header = () => {
             <Logo />
             <Contacts />
             <div className={styles.infoBar}>
+                <HeaderTitle />
                 <SearchBar />
                 <Favourites />
             </div>

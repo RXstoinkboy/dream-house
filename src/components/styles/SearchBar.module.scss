@@ -11,7 +11,9 @@
 }
 
 .searchBar{
+    z-index: 2;
     height: 100%;
+    background: transparent;
     padding-right: 1.8rem;
     padding-left: .3rem;
     transition: all .3s ease;
@@ -38,22 +40,12 @@
     }
 }
 
-
-
 .searchIcon{
+    z-index: 1;
     height: 1.5rem;
     width: 1.5rem;
     position: absolute;
     right: .3rem;
     transition: all .3s ease;
     user-select: none;
-    cursor: text;
-    
-    &:hover{
-        right: .6rem;
-        color: var(--formBlue);
-    }
-    &:hover ~ .searchBar{
-        box-shadow: var(--boxShadowTemplate);
-    }
 }

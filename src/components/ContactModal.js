@@ -7,10 +7,18 @@ import {toggleContactModal} from '../actions/toggleContactModal'
 const ContactModal = props => {
     return (
         <>
-            <div id='modal' className={props.contactModal ? styles.modal : styles.invisibleModal}>
+            <div 
+                id='modal' 
+                className={props.contactModal ? styles.modal : styles.invisibleModal}
+            >
                 hello from modal
             </div>
-            <div id='shade' className={props.contactModal ? styles.shade : styles.invisibleShade} onClick={props.toggleContactModal} />
+            <div 
+                id='shade' 
+                className={props.contactModal ? styles.shade : styles.invisibleShade} 
+                onClick={props.toggleContactModal}
+                onKeyDown={props.toggleContactModal}
+            />
         </>
     );
 };

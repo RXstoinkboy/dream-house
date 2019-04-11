@@ -14,6 +14,7 @@ test('Clicking on <Logo /> redirects to "/"',()=>{
             <Logo />
         </MemoryRouter>
     )
+    window.location = jest.fn();
     console.log(`path before clicking: ${window.location.pathname}`);
 
 
