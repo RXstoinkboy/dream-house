@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import styles from './styles/Logo.module.css'
+import styles from './styles/Logo.module.scss'
 import logo from '../assets/img/logo.jpg'
 
 const Logo = () => {

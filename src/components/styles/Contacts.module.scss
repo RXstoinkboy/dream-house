@@ -10,8 +10,9 @@
 .clickable{
     cursor: pointer;
     transition: all .3s ease;
+
+    &:hover{
+        color: var(--formBlue);
+    }
 }
 
-.clickable:hover{
-    color: var(--formBlue);
-}

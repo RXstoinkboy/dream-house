@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/Contacts.module.css'
+import styles from './styles/Contacts.module.scss'
 
 import { connect } from 'react-redux'
 import {toggleContactModal} from '../actions/toggleContactModal'

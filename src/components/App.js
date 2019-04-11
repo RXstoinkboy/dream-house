@@ -20,8 +20,8 @@ class App extends Component {
                     <Route exact path='/' component={Home} />
                 </Switch>
             <Footer />
-
-            {this.props.contactModal ? <ContactModal /> : null}
+            <ContactModal />
+            {/* {this.props.contactModal ? <ContactModal /> : null} */}
             
             </>
         );
