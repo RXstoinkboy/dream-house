@@ -10,7 +10,7 @@ import Home from './Home'
 import Footer from './Footer'
 import ContactModal from './ContactModal'
 
-class App extends Component {
+export class App extends Component {
     render() {
         return (
             <>
@@ -18,6 +18,9 @@ class App extends Component {
             <Navigation />
                 <Switch>
                     <Route exact path='/' component={Home} />
+                    {/* <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={Home} /> */}
                 </Switch>
             <Footer />
             <ContactModal />

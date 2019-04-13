@@ -4,7 +4,9 @@ import styles from './styles/Contacts.module.scss'
 import { connect } from 'react-redux'
 import {toggleContactModal} from '../actions/toggleContactModal'
 
-const ContactForm = props => {
+import PropTypes from 'prop-types'
+
+export const ContactForm = props => {
         return (
             <div 
                 className={styles.clickable}
@@ -20,3 +22,7 @@ const mapDispatchToProps = {
 }
 
 export default connect(null, mapDispatchToProps)(ContactForm);
+
+ContactForm.propTypes = {
+    toggleContactModal: PropTypes.func.isRequired
+}

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import styles from './styles/Logo.module.scss'
 import logo from '../assets/img/logo.jpg'
 
-const Logo = () => {
+export const Logo = () => {
     return (
         <div className={styles.wrapper}>
           <Link to='/'>

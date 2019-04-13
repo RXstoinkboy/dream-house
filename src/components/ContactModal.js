@@ -4,7 +4,9 @@ import styles from './styles/Modal.module.scss';
 import {connect} from 'react-redux'
 import {toggleContactModal} from '../actions/toggleContactModal'
 
-const ContactModal = props => {
+import PropTypes from 'prop-types'
+
+export const ContactModal = props => {
     return (
         <>
             <div 
@@ -34,3 +36,7 @@ const mapDispatchToProps = {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactModal);
+
+ContactModal.propTypes = {
+    contactModal: PropTypes.bool
+}
