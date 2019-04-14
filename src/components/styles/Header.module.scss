@@ -1,8 +1,14 @@
+.wrapper{
+    background: var(--primDark);
+    display: flex;
+    justify-content: center;
+}
+
 .grid{
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     display: grid;
-    background: var(--primDark);
+    width: 1200px;
 }
 
 .infoBar{

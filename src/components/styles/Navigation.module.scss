@@ -4,8 +4,11 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 6px 6px grey;
+    position: relative;
+    z-index: 50;
 }
 
 .navWrapper{
     display: flex;
+    max-width: 1200px;
 }

@@ -10,13 +10,15 @@ import HeaderTitle from './HeaderTitle'
 
 const Header = () => {
     return (
-        <div className={styles.grid}>
-            <Logo />
-            <ContactsTopBar />
-            <div className={styles.infoBar}>
-                <HeaderTitle />
-                <SearchBar />
-                <Favourites />
+        <div className={styles.wrapper}>
+            <div className={styles.grid}>
+                <Logo />
+                <ContactsTopBar />
+                <div className={styles.infoBar}>
+                    <HeaderTitle />
+                    <SearchBar />
+                    <Favourites />
+                </div>
             </div>
         </div>
     );
