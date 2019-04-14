@@ -1,7 +1,6 @@
 .wrapper{
     grid-column: 2/-1;
     grid-row: 2/-1;
-    
 }
 
 .favouritesListBtn{
@@ -9,30 +8,30 @@
     height: 2rem;
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid var(--lightGrey);
     background: transparent;
     transition: all .2s ease;
     text-transform: uppercase;
     cursor: pointer;
     
     &:hover{
-        background: var(--formBlue);
+        // background: var(--formBlue);
         border: 1px solid var(--formBlue);
-        box-shadow: 0 1px 2px grey;
+        box-shadow: var(--boxShadowTemplate);
         transform: translateY(-2px);
     }
 
     &:hover > .favIcon{
-        fill: red;
-        
+        transform: scale(1);
     }
 
     &:hover > p{
-        color: white;
+        color: var(--formBlue);
     }
 
     & > * {
         margin: 0 .4rem;
+        color: var(--lightGrey);
     }
 
     &:focus{
@@ -44,4 +43,6 @@
 .favIcon{
     height: 100%;
     transition: all .2s ease;
+    fill: red;
+    transform: scale(.9);
 }

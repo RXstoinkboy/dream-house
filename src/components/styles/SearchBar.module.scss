@@ -17,16 +17,18 @@
     padding-right: 1.8rem;
     padding-left: .3rem;
     transition: all .3s ease;
-    border: 1px solid black;
+    color: var(--lightGrey);
+    border: 1px solid var(--lightGrey);
+    box-shadow: 0 0 3px 1px var(--primDark);
     
     &:hover{
         box-shadow: var(--boxShadowTemplate);
-        border: none;
+        border: 1px solid var(--formBlue);
     }
     
     &:focus{
         box-shadow: var(--boxShadowTemplate);
-        border: none;
+        border: 1px solid var(--formBlue);
     }
     
     &:hover ~ .searchIcon{
@@ -38,14 +40,19 @@
         right: .6rem;
         color: var(--formBlue);
     }
+
+    &::placeholder{
+        color: var(--darkGrey);
+    }
 }
 
 .searchIcon{
     z-index: 1;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
     position: absolute;
     right: .3rem;
     transition: all .3s ease;
     user-select: none;
+    color: var(--lightGrey);
 }

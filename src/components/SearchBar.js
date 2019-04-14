@@ -6,7 +6,7 @@ const SearchBar = () => {
     return (
         <form className={styles.wrapper}>
             <label htmlFor='searchBar' className={styles.searchElement}>
-                <input id='searchBar' type='search' className={styles.searchBar}/>
+                <input id='searchBar' type='search' placeholder='search ...' className={styles.searchBar}/>
                 <SearchIcon className={styles.searchIcon}/>
             </label>
         </form>
