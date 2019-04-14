@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './styles/Contacts.module.scss'
+import styles from './styles/ContactsTopBar.module.scss'
 
 import ContactForm from './ContactForm'
 
-const Contacts = () => {
+const ContactsTopBar = () => {
     return (
         <div className={styles.wrapper}>
             <a href='tel: +1 123 098 567' className={styles.clickable}>phone: +1 123 098 567</a>
@@ -13,4 +13,4 @@ const Contacts = () => {
     );
 };
 
-export default Contacts;
+export default ContactsTopBar;

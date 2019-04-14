@@ -4,8 +4,8 @@ import styles from './styles/NavLink.module.scss'
 
 const NavLink = props => {
     return (
-        <div>
-            <Link to={props.name === 'home' ? '/' : props.name}>{props.name}</Link>
+        <div className={styles.wrapper}>
+            <Link className={styles.link} to={props.name === 'home' ? '/' : `/${props.name}`}>{props.name}</Link>
         </div>
     );
 };
