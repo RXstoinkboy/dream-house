@@ -2,7 +2,7 @@ import React from 'react';
 import image from '../assets/img/logo.jpg'
 import styles from './styles/Hero.module.scss'
 
-const Hero = () => {
+export const Hero = () => {
     return (
           <section className={styles.slider}>
             <div className={styles.imageWrapper}>
