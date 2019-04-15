@@ -15,7 +15,7 @@ const Hero = () => {
               <span className={styles.rightArrow__innerEl}></span>
             </button>
             <div className={styles.dots}>
-              <div className={styles.dot} />
+              <div className={styles.dotMarked} />
               <div className={styles.dot} />
               <div className={styles.dot} />
               <div className={styles.dot} />
