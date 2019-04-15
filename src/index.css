@@ -29,4 +29,6 @@ a{
   --primDark: hsla(0, 0%, 2%, 95%);
   --secDark: hsla(0, 0%, 2%, 90%);
   --terDark: hsla(0, 0%, 5%, 90%);
+
+  --pearl: hsla(0, 0%, 95%, 30%);
 }

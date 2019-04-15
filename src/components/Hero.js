@@ -6,10 +6,14 @@ const Hero = () => {
     return (
           <section className={styles.slider}>
             <div className={styles.imageWrapper}>
-              <img src={image} alt="image"/>
+              <img className={styles.img} src={image} alt="apartment info - change it to something take from API"/>
             </div>
-            <button className={styles.leftArrow}></button>
-            <button className={styles.rightArrow}></button>
+            <button className={styles.leftArrow}>
+              <span className={styles.leftArrow__innerEl}></span>
+            </button>
+            <button className={styles.rightArrow}>
+              <span className={styles.rightArrow__innerEl}></span>
+            </button>
             <div className={styles.dots}>
               <div className={styles.dot} />
               <div className={styles.dot} />

@@ -4,8 +4,15 @@
     display: flex;
     justify-content: center;
     box-shadow: 0 6px 6px grey;
-    position: relative;
+    position: fixed;
+    margin-top: 150px;
     z-index: 50;
+    transition: all .3s ease;
+
+    &:hover{
+        box-shadow: 0 6px 6px grey, 0 0 8px hsla(0, 0%, 20%, 50%);
+        transform: scale(1.009);
+    }
 }
 
 .navWrapper{

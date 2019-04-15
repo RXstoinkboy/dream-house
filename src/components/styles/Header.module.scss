@@ -1,7 +1,11 @@
 .wrapper{
     background: var(--primDark);
     display: flex;
+    z-index: 50;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 150px;
 }
 
 .grid{
