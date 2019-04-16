@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 import image from '../assets/img/logo.jpg'
 import styles from './styles/Hero.module.scss'
+import axios from 'axios'
+import homesList from '../assets/data/homesList'
 
-export const Hero = () => {
+export class Hero extends Component{
+
+  componentDidMount(){
+    fetchData()
+  }
+  render(){
     return (
           <section className={styles.slider}>
             <div className={styles.imageWrapper}>
@@ -23,6 +30,14 @@ export const Hero = () => {
             </div>
           </section>
     );
+
+  }
 };
+
+const fetchData =()=>{
+  const url = 'http://www.zillow.com/webservice/GetZestimate.htm?zws-id=X1-ZWz17zmqybsd8r_3mmvk&zpid=48749425';
+
+  axios.get(url).then(data => console.log(data));
+}
 
 export default Hero;
