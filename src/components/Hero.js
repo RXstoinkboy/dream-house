@@ -7,7 +7,9 @@ import homesList from '../assets/data/homesList'
 export class Hero extends Component{
 
   componentDidMount(){
-    fetchData()
+    createURL().forEach(el => {
+      fetchData(el)
+    })
   }
   render(){
     return (
@@ -34,9 +36,17 @@ export class Hero extends Component{
   }
 };
 
-const fetchData =()=>{
-  const url = 'http://www.zillow.com/webservice/GetZestimate.htm?zws-id=X1-ZWz17zmqybsd8r_3mmvk&zpid=48749425';
+const createURL = () => {
+  let URLlist = [];
 
+  homesList.forEach(el => {
+    const elURL = `http://www.zillow.com/webservice/GetUpdatedPropertyDetails.htm?zws-id=X1-ZWz17zmqybsd8r_3mmvk&zpid=${el}`;
+    URLlist.push(elURL);
+  })
+  return URLlist;
+}
+
+const fetchData =(url)=>{
   axios.get(url).then(data => console.log(data));
 }
 
