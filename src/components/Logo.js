@@ -12,9 +12,9 @@ export const Logo = () => {
               <div className={styles.botRightBorder}></div>
               <div className={styles.botLeftBorder}></div>
             </div>
-            <div className={styles.innerSqr}>d</div>
+            <div className={styles.innerSqr}>mf</div>
           </div>
-          <div className={styles.logoText}>dream house</div>
+          <div className={styles.logoText}>My Finder</div>
         </Link>
     );
 };

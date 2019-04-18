@@ -28,3 +28,5 @@ export default createStore(
   initialState,
   composedEnhancers
 )
+
+// store.subscribe(()=>{console.log(store)})
